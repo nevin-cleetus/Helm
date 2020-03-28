@@ -1,0 +1,13 @@
+#Helm 3 Installation
+
+[vagrant@helmmaster software]$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+
+[vagrant@helmmaster software]$ chmod 700 get_helm.sh
+
+[vagrant@helmmaster software]$ ./get_helm.sh
+
+[vagrant@helmmaster software]$ helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+
+[vagrant@helmmaster software]$  helm repo update
+
+The above command might take few minutes
